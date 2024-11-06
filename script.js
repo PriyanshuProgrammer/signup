@@ -115,7 +115,7 @@ let tokenobj = {
 }
 
 if(token){
-    fetch("/signin",{
+    fetch("https://signupserver-e6du.onrender.com/signin",{
         method:"POST",
         headers:{
             'Content-Type':"application/json"
@@ -140,7 +140,7 @@ document.querySelector("nav ul .signup button").addEventListener("click",functio
             email:email,
             password:password
         }
-        fetch("/signup",{
+        fetch("https://signupserver-e6du.onrender.com/signup",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"
@@ -166,7 +166,7 @@ document.querySelector("nav ul .signin button").addEventListener("click",functio
             email:email,
             password:password
         }
-        fetch("/signin",{
+        fetch("https://signupserver-e6du.onrender.com/signin",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"
